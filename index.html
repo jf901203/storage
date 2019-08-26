@@ -12,11 +12,18 @@
 </html>
 
 <script>
-// 验证浏览器时是否支持localStorage
-if(window.localStorage){
-    alert('支持')
-}else{
-    alert('不支持')
+
+localStorage.t1="000"
+
+localStorage['t2']="111"
+
+localStorage.setItem('t3','222')
+
+for(let i=0;i<localStorage.length;i++){
+  
+  document.write(localStorage.getItem(localStorage.key(i))+'</br>')
+
 }
+
 
 </script>
